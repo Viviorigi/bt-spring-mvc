@@ -7,9 +7,7 @@
 		<div class="col-md-12 m-auto">
 			<div class="card">
 				<div class="card-header">
-					<h1 class="card-title">List Product</h1>
-					<a href="${contextPath}/admin/addproduct"
-						class="btn btn-success float-right">Add new product</a>
+					<h1 class="card-title">List User</h1>
 				</div>
 				<table class="table table-striped projects">
 					<thead>
@@ -30,10 +28,9 @@
 								<td>${p.proId }</td>
 								<td>${p.proName }</td>
 								<td><del>
-										<fmt:formatNumber value="${p.oldPrice}" type="currency"
-											currencyCode="USD"></fmt:formatNumber>
-									</del> / <fmt:formatNumber value="${p.price}" type="currency"
-										currencyCode="USD"></fmt:formatNumber></td>
+										<fmt:formatNumber value="${p.oldPrice}" type="currency"></fmt:formatNumber>
+									</del>/ <fmt:formatNumber value="${p.price }" type="currency"></fmt:formatNumber>
+								</td>
 								<td><span class="badge  ${p.status?"badge-success":"badge-danger" }">${p.status?"InStock":"OutOfStock" }
 								</span></td>
 								</td>

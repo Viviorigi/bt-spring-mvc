@@ -117,10 +117,10 @@
 										<td><img src="${contextPath}/images/${od.product.image }"
 											style="width: 100px !important; height: 120px !important"></td>
 										<td style="line-height: 120px"><fmt:formatNumber
-												value="${od.price} " type="currency"></fmt:formatNumber></td>
+												value="${od.price} " type="currency" currencyCode="USD"></fmt:formatNumber></td>
 										<td style="line-height: 120px">${od.quantity }</td>
 										<td style="line-height: 120px"><fmt:formatNumber
-												value="${od.price *od.quantity }" type="currency"></fmt:formatNumber></td>
+												value="${od.price *od.quantity }" type="currency" currencyCode="USD"></fmt:formatNumber></td>
 										<c:set var="total" value="${total+od.price*od.quantity}" />
 									</tr>
 								</c:forEach>
@@ -161,11 +161,11 @@
 							<div>
 								<h5 class="pt-5 pr-5 pl-5">
 									Ship:
-									<fmt:formatNumber value="${50000}" type="currency"></fmt:formatNumber>
+									<fmt:formatNumber value="${2}" type="currency" currencyCode="USD"></fmt:formatNumber>
 								</h5>
 								<h4 class="pr-5 pl-5 pb-5">
 									<strong>TotalPrice: <fmt:formatNumber
-											value="${total+50000 }" type="currency"></fmt:formatNumber></strong>
+											value="${total+2 }" type="currency" currencyCode="USD"></fmt:formatNumber></strong>
 								</h4>
 							</div>
 

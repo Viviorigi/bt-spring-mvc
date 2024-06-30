@@ -50,78 +50,7 @@
 </section>
 <!-- end features Area -->
 
-<!-- Start category Area -->
-<section class="category-area">
-	<div class="container">
-		<div class="row justify-content-center">
-			<div class="col-lg-8 col-md-12">
-				<div class="row">
-					<div class="col-lg-8 col-md-8">
-						<div class="single-deal">
-							<div class="overlay"></div>
-							<img class="img-fluid w-100"
-								src="${contextPath }/home/img/category/c1.jpg" alt=""> <a
-								href="img/category/c1.jpg" class="img-pop-up" target="_blank">
-								<div class="deal-details">
-									<h6 class="deal-title">Sneaker for Sports</h6>
-								</div>
-							</a>
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-4">
-						<div class="single-deal">
-							<div class="overlay"></div>
-							<img class="img-fluid w-100"
-								src="${contextPath }/home/img/category/c2.jpg" alt=""> <a
-								href="img/category/c2.jpg" class="img-pop-up" target="_blank">
-								<div class="deal-details">
-									<h6 class="deal-title">Sneaker for Sports</h6>
-								</div>
-							</a>
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-4">
-						<div class="single-deal">
-							<div class="overlay"></div>
-							<img class="img-fluid w-100"
-								src="${contextPath }/home/img/category/c3.jpg" alt=""> <a
-								href="img/category/c3.jpg" class="img-pop-up" target="_blank">
-								<div class="deal-details">
-									<h6 class="deal-title">Product for Couple</h6>
-								</div>
-							</a>
-						</div>
-					</div>
-					<div class="col-lg-8 col-md-8">
-						<div class="single-deal">
-							<div class="overlay"></div>
-							<img class="img-fluid w-100"
-								src="${contextPath }/home/img/category/c4.jpg" alt=""> <a
-								href="img/category/c4.jpg" class="img-pop-up" target="_blank">
-								<div class="deal-details">
-									<h6 class="deal-title">Sneaker for Sports</h6>
-								</div>
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-4 col-md-6">
-				<div class="single-deal">
-					<div class="overlay"></div>
-					<img class="img-fluid w-100"
-						src="${contextPath }/home/img/category/c5.jpg" alt=""> <a
-						href="img/category/c5.jpg" class="img-pop-up" target="_blank">
-						<div class="deal-details">
-							<h6 class="deal-title">Sneaker for Sports</h6>
-						</div>
-					</a>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-<!-- End category Area -->
+
 
 <!-- start product Area -->
 <section class="owl-carousel active-product-area section_gap">
@@ -144,15 +73,15 @@
 					<div class="col-lg-3 col-md-6">
 						<div class="single-product">
 							<a href="${contextPath }/product-detail/${p.slug}"><img
-								class="img-fluid" src="${contextPath }/images/${p.image}" alt=""></a>
+								class="img-fluid" src="${contextPath }/images/${p.image}" style="height:200px" alt=""></a>
 							<div class="product-details">
 								<h6>${p.proName }</h6>
 								<div class="price">
 									<h6>
-										<fmt:formatNumber value="${p.price }" type="currency"></fmt:formatNumber>
+										<fmt:formatNumber value="${p.price }" type="currency" currencyCode="USD"></fmt:formatNumber>
 									</h6>
 									<h6 class="l-through">
-										<fmt:formatNumber value="${p.oldPrice }" type="currency"></fmt:formatNumber>
+										<fmt:formatNumber value="${p.oldPrice }" type="currency" currencyCode="USD"></fmt:formatNumber>
 									</h6>
 								</div>
 								<div class="prd-bottom">
@@ -225,79 +154,27 @@
 <!-- end product Area -->
 
 <!-- Start exclusive deal Area -->
-<section class="exclusive-deal-area">
-	<div class="container-fluid">
-		<div class="row justify-content-center align-items-center">
-			<div class="col-lg-6 no-padding exclusive-left">
-				<div class="row clock_sec clockdiv" id="clockdiv">
-					<div class="col-lg-12">
-						<h1>Exclusive Hot Deal Ends Soon!</h1>
-						<p>Who are in extremely love with eco friendly system.</p>
-					</div>
-					<div class="col-lg-12">
-						<div class="row clock-wrap">
-							<div class="col clockinner1 clockinner">
-								<h1 class="days">150</h1>
-								<span class="smalltext">Days</span>
-							</div>
-							<div class="col clockinner clockinner1">
-								<h1 class="hours">23</h1>
-								<span class="smalltext">Hours</span>
-							</div>
-							<div class="col clockinner clockinner1">
-								<h1 class="minutes">47</h1>
-								<span class="smalltext">Mins</span>
-							</div>
-							<div class="col clockinner clockinner1">
-								<h1 class="seconds">59</h1>
-								<span class="smalltext">Secs</span>
-							</div>
-						</div>
-					</div>
-				</div>
-				<a href="" class="primary-btn">Shop Now</a>
-			</div>
-			<div class="col-lg-6 no-padding exclusive-right">
-				<div class="active-exclusive-product-slider">
-					<!-- single exclusive carousel -->
-					<div class="single-exclusive-slider">
-						<img class="img-fluid"
-							src="${contextPath }/home/img/product/e-p1.png" alt="">
-						<div class="product-details">
-							<div class="price">
-								<h6>$150.00</h6>
-								<h6 class="l-through">$210.00</h6>
-							</div>
-							<h4>addidas New Hammer sole for Sports person</h4>
-							<div
-								class="add-bag d-flex align-items-center justify-content-center">
-								<a class="add-btn" href=""><span class="ti-bag"></span></a> <span
-									class="add-text text-uppercase">Add to Bag</span>
-							</div>
-						</div>
-					</div>
-					<!-- single exclusive carousel -->
-					<div class="single-exclusive-slider">
-						<img class="img-fluid"
-							src="${contextPath }/home/img/product/e-p1.png" alt="">
-						<div class="product-details">
-							<div class="price">
-								<h6>$150.00</h6>
-								<h6 class="l-through">$210.00</h6>
-							</div>
-							<h4>addidas New Hammer sole for Sports person</h4>
-							<div
-								class="add-bag d-flex align-items-center justify-content-center">
-								<a class="add-btn" href=""><span class="ti-bag"></span></a> <span
-									class="add-text text-uppercase">Add to Bag</span>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
+<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="https://keygem.com/cdn/shop/files/ALS00598_11_Edited.jpg?v=1712829770&width=1800" alt="First slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="https://keygem.com/cdn/shop/files/Photo_Dec_26_2023_20_58_24.jpg?v=1704712619&width=1800" alt="Second slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="https://keygem.com/cdn/shop/files/DSC05080_d7c53507-e54b-4c66-9aa9-6a2ca7043284.jpg?v=1718713362&width=1800" alt="Third slide">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
 <!-- End exclusive deal Area -->
 
 <!-- Start brand Area -->
@@ -338,11 +215,11 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-lg-9">
+			<div class="col-lg-12">
 				<div class="row">
 					<div class="col-lg-4 col-md-4 col-sm-6 mb-20">
 						<div class="single-related-product d-flex">
-							<a href="#"><img src="${contextPath }/home/img/r1.jpg" alt=""></a>
+							<a href="#"><img style="width: 200px;  height:100px"  src="https://keygem.com/cdn/shop/products/ArtNouveauBase.png?v=1645129067&width=600" alt=""></a>
 							<div class="desc">
 								<a href="#" class="title">Black lace Heels</a>
 								<div class="price">
@@ -354,7 +231,7 @@
 					</div>
 					<div class="col-lg-4 col-md-4 col-sm-6 mb-20">
 						<div class="single-related-product d-flex">
-							<a href="#"><img src="${contextPath }/home/img/r2.jpg" alt=""></a>
+							<a href="#"><img style="width: 200px;  height:100px"  src="https://keygem.com/cdn/shop/products/Coarse60_3.png?v=1633260707&width=600" alt=""></a>
 							<div class="desc">
 								<a href="#" class="title">Black lace Heels</a>
 								<div class="price">
@@ -366,7 +243,7 @@
 					</div>
 					<div class="col-lg-4 col-md-4 col-sm-6 mb-20">
 						<div class="single-related-product d-flex">
-							<a href="#"><img src="${contextPath }/home/img/r3.jpg" alt=""></a>
+							<a href="#"><img style="width: 200px;  height:100px" src="https://keygem.com/cdn/shop/files/SylphPotion-4copy.png?v=1682676087&width=600" alt=""></a>
 							<div class="desc">
 								<a href="#" class="title">Black lace Heels</a>
 								<div class="price">
@@ -378,7 +255,7 @@
 					</div>
 					<div class="col-lg-4 col-md-4 col-sm-6 mb-20">
 						<div class="single-related-product d-flex">
-							<a href="#"><img src="${contextPath }/home/img/r5.jpg" alt=""></a>
+							<a href="#"><img style="width: 200px;  height:100px"  src="https://keygem.com/cdn/shop/products/black_79c3ce44-9ff9-4e05-b3cc-4d17515e44f4.jpg?v=1704283762&width=600" alt=""></a>
 							<div class="desc">
 								<a href="#" class="title">Black lace Heels</a>
 								<div class="price">
@@ -390,7 +267,7 @@
 					</div>
 					<div class="col-lg-4 col-md-4 col-sm-6 mb-20">
 						<div class="single-related-product d-flex">
-							<a href="#"><img src="${contextPath }/home/img/r6.jpg" alt=""></a>
+							<a href="#"><img style="width: 200px;  height:100px" src="https://keygem.com/cdn/shop/products/black-black_alu_520dfa8f-0f50-41c3-a821-f1c2298282ce.jpg?v=1655842999&width=600" alt=""></a>
 							<div class="desc">
 								<a href="#" class="title">Black lace Heels</a>
 								<div class="price">
@@ -402,7 +279,7 @@
 					</div>
 					<div class="col-lg-4 col-md-4 col-sm-6 mb-20">
 						<div class="single-related-product d-flex">
-							<a href="#"><img src="${contextPath }/home/img/r7.jpg" alt=""></a>
+							<a href="#"><img  style="width: 200px;  height:100px"  src="https://keygem.com/cdn/shop/files/ZoomPad_EEBlack_PVDGold_d1d80dd1-121e-460a-b796-7743fb121f5f.jpg?v=1700039801&width=600" alt=""></a>
 							<div class="desc">
 								<a href="#" class="title">Black lace Heels</a>
 								<div class="price">
@@ -414,7 +291,7 @@
 					</div>
 					<div class="col-lg-4 col-md-4 col-sm-6">
 						<div class="single-related-product d-flex">
-							<a href="#"><img src="${contextPath }/home/img/r9.jpg" alt=""></a>
+							<a href="#"><img style="width: 200px;  height:100px"  src="https://keygem.com/cdn/shop/products/202205091927114.png?v=1658498850&width=600" alt=""></a>
 							<div class="desc">
 								<a href="#" class="title">Black lace Heels</a>
 								<div class="price">
@@ -426,7 +303,7 @@
 					</div>
 					<div class="col-lg-4 col-md-4 col-sm-6">
 						<div class="single-related-product d-flex">
-							<a href="#"><img src="${contextPath }/home/img/r10.jpg"
+							<a href="#"><img style="width: 200px;  height:100px"  src="https://keygem.com/cdn/shop/files/ZoomPad_EEBlack_PVDGold_d1d80dd1-121e-460a-b796-7743fb121f5f.jpg?v=1700039801&width=600"
 								alt=""></a>
 							<div class="desc">
 								<a href="#" class="title">Black lace Heels</a>
@@ -439,7 +316,7 @@
 					</div>
 					<div class="col-lg-4 col-md-4 col-sm-6">
 						<div class="single-related-product d-flex">
-							<a href="#"><img src="${contextPath }/home/img/r11.jpg"
+							<a href="#"><img style="width: 200px;  height:100px" src="https://keygem.com/cdn/shop/files/ZoomPad_EEBlack_PVDGold_d1d80dd1-121e-460a-b796-7743fb121f5f.jpg?v=1700039801&width=600"
 								alt=""></a>
 							<div class="desc">
 								<a href="#" class="title">Black lace Heels</a>
@@ -452,14 +329,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-lg-3">
-				<div class="ctg-right">
-					<a href="#" target="_blank"> <img
-						class="img-fluid d-block mx-auto"
-						src="${contextPath }/home/img/category/c5.jpg" alt="">
-					</a>
-				</div>
-			</div>
+
 		</div>
 	</div>
 </section>

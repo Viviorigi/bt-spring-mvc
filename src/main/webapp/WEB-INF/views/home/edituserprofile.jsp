@@ -8,7 +8,7 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <div class="breadcrumb__text">
-                        <h2>Cập nhật Thông tin</h2>
+                        <h2>Edit User</h2>
                     </div>
                 </div>
             </div>
@@ -17,7 +17,7 @@
     <!-- Breadcrumb Section End -->
     <section style="background-color: #eee;" class="">
         <div class="container bootstrap snippets bootdey card ">
-            <h1 class=" p-3">Cập nhật thông tin</h1>
+            <h1 class=" p-3">Edit User</h1>
             <hr>
             <form class="form-horizontal" role="form" method="POST"
                         action="${contextPath}/updateuser" enctype="multipart/form-data"  >
@@ -69,7 +69,7 @@
                         </div>
                        
                     </div>
-                    <button type="submit" class="btn btn-success m-3">Cập nhật thông tin</button>
+                    <button type="submit" class="btn btn-success m-3">Submit</button>
 
                 </div>
                

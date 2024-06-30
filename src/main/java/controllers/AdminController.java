@@ -60,7 +60,7 @@ public class AdminController {
 		pageno = pageno == null ? 1 : pageno;
 		model.addAttribute("categories", cateImpl.getAll());
 		model.addAttribute("cateid", cateid);
-		ProductPage propage = proImpl.paging(cateid, pageno, 5);
+		ProductPage propage = proImpl.paging(cateid, pageno, 10);
 		model.addAttribute("page", "product");
 		model.addAttribute("category", cateImpl.getAll());
 		model.addAttribute("products", propage.getProducts());
@@ -208,7 +208,7 @@ public class AdminController {
 	public String category(Integer pageno, Model model, HttpServletRequest req) {
 		pageno = pageno == null ? 1 : Integer.parseInt(req.getParameter("pageno"));
 		model.addAttribute("page", "category");
-		CategoryPage categoryPage = cateImpl.paging(pageno, 3);
+		CategoryPage categoryPage = cateImpl.paging(pageno, 10);
 		model.addAttribute("categories", categoryPage.getCategories());
 		model.addAttribute("totalpage", categoryPage.getTotalPages());
 		model.addAttribute("currentpage", pageno);

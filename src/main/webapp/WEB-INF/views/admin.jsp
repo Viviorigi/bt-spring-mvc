@@ -290,6 +290,23 @@
               </li>
             </ul>
           </li>
+                    <li  class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-circle"></i>
+              <p>
+                Manage Users
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="${contextPath}/admin/users" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Orders</p>
+                </a>
+              </li>
+            </ul>
+          </li>
           	<li class="nav-item fixed-bottom ">
           	<a class="nav-link" href="${contextPath}/admin/logout">Logout</a>
           </li>

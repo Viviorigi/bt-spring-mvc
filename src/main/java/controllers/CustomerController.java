@@ -32,6 +32,7 @@ import dao.CategoryImpl;
 import dao.OrderDao;
 import dao.OrderImpl;
 import dao.ProductImpl;
+import dao.RatingImpl;
 import entities.Account;
 import entities.Cart;
 import entities.ImgProduct;
@@ -39,6 +40,7 @@ import entities.Order;
 import entities.OrderDetail;
 import entities.Product;
 import entities.ProductPage;
+import entities.RatingProducts;
 import util.Cipher;
 
 @Controller
@@ -51,6 +53,8 @@ public class CustomerController {
 	AccountImpl accountService;
 	@Autowired
 	OrderImpl orderDao;
+	@Autowired
+	RatingImpl ratingDao;
 
 	@RequestMapping(value = { "", "home" })
 	public String index(Model model) {
@@ -63,8 +67,11 @@ public class CustomerController {
 	@RequestMapping(value = "product-detail/{slug}")
 	public String productDetail(@PathVariable("slug") String slug, Model model) {
 		model.addAttribute("page", "product-detail");
-		model.addAttribute("product", proImpl.getBySlug(slug));
+		Product product = proImpl.getBySlug(slug);
+		model.addAttribute("product", product);
 		model.addAttribute("category", cateImpl.getAll());
+		 List<RatingProducts> ratings = ratingDao.getAllByProductId(product.getProId());
+		   model.addAttribute("ratings", ratings);	
 		return "home";
 	}
 

@@ -32,10 +32,10 @@ public class Product implements Serializable {
 	@NotEmpty(message = "Sản phẩm không được trống")
 	private String proName;
 	private String slug;
-	@Min(value = 10000, message = "Giá sản phẩm phải lớn hơn 10000")
+//	@Min(value = 10000, message = "Giá sản phẩm phải lớn hơn 10000")
     @Max(value = 10000000, message = "Giá sản phẩm không được vượt quá  10000000")
 	private float price;
-	@Min(value = 10000, message = "Giá sản phẩm phải lớn hơn 10000")
+//	@Min(value = 10000, message = "Giá sản phẩm phải lớn hơn 10000")
     @Max(value = 10000000, message = "Giá sản phẩm không được vượt quá  10000000")
 	private float oldPrice;
 	private boolean status;
@@ -57,6 +57,9 @@ public class Product implements Serializable {
 	
 	@OneToMany(mappedBy = "product")
 	private List<OrderDetail> orderdetails;
+	
+//    @OneToMany(mappedBy = "product")
+//    private List<RatingProducts> ratings;
 	
 	public Product() {
 		// TODO Auto-generated constructor stub
@@ -136,11 +139,25 @@ public class Product implements Serializable {
 
 
 
+	public List<OrderDetail> getOrderdetails() {
+		return orderdetails;
+	}
+
+	public void setOrderdetails(List<OrderDetail> orderdetails) {
+		this.orderdetails = orderdetails;
+	}
+
+//	public List<RatingProducts> getRatings() {
+//		return ratings;
+//	}
+//
+//	public void setRatings(List<RatingProducts> ratings) {
+//		this.ratings = ratings;
+//	}
+
 	public List<ImgProduct> getImgProducts() {
 		return imgProducts;
 	}
-
-
 
 	public void setImgProducts(List<ImgProduct> imgProducts) {
 		this.imgProducts = imgProducts;

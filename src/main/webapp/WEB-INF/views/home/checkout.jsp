@@ -40,14 +40,14 @@
                             <ul class="list">
                                 <li><a href="#">Product <span>Total</span></a></li>
                               <c:forEach items="${cart}" var="c">
-                                <li><a href="${contextPath }/product-detail/${c.slug}">${c.proName }<span class="middle">x ${c.quantity}</span> <span class="last"><fmt:formatNumber value="${c.price * c.quantity }" type="currency"></fmt:formatNumber></span></a></li>
+                                <li><a href="${contextPath }/product-detail/${c.slug}">${c.proName }<span class="middle">x ${c.quantity}</span> <span class="last"><fmt:formatNumber value="${c.price * c.quantity }" type="currency" currencyCode="USD"></fmt:formatNumber></span></a></li>
                               <c:set var="total" value="${total+c.price*c.quantity}" />
                               </c:forEach>
                             </ul>
                             
                             <ul class="list list_2">
-                                <li><a href="#">Subtotal <span><fmt:formatNumber value="${total}" type="currency"></fmt:formatNumber></span></a></li>      
-                                <li><a href="#">Total <span><fmt:formatNumber value="${total}" type="currency"></fmt:formatNumber></span></a></li>
+                                <li><a href="#">Subtotal <span><fmt:formatNumber value="${total}" type="currency" currencyCode="USD"></fmt:formatNumber></span></a></li>      
+                                <li><a href="#">Total <span><fmt:formatNumber value="${total}" type="currency" currencyCode="USD"></fmt:formatNumber></span></a></li>
                             </ul>
                             
                             <div class="payment_item ">

@@ -144,7 +144,7 @@
 							<div class="col-lg-7">
 								<div class="banner-img">
 									<img class="img-fluid"
-										src="${contextPath }/home/img/banner/banner-img.png" alt="">
+										src="https://keygem.com/cdn/shop/files/ALS00598_11_Edited.jpg?v=1712829770&width=1800" alt="">
 								</div>
 							</div>
 						</div>
@@ -168,7 +168,7 @@
 							<div class="col-lg-7">
 								<div class="banner-img">
 									<img class="img-fluid"
-										src="${contextPath }/home/img/banner/banner-img.png" alt="">
+										src="https://keygem.com/cdn/shop/files/DSC03188.jpg?v=1716803417&width=1800" alt="">
 								</div>
 							</div>
 						</div>
@@ -203,7 +203,7 @@
 						<div class="" id="mc_embed_signup">
 
 							<form target="_blank" novalidate="true"
-								action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
+								action="https://keygem.com/cdn/shop/files/12_cb92261f-3469-458e-bf6d-a866abb17594.jpg?v=1713175930&width=1800"
 								method="get" class="form-inline">
 
 								<div class="d-flex flex-row">

@@ -30,7 +30,7 @@
 		<property name="url"
 			value="jdbc:sqlserver://localhost:1433;databaseName=btl_spring_mvc;Encrypt=True;trustServerCertificate=True"></property>
 		<property name="username" value="sa"></property>
-		<property name="password" value="1234$"></property>
+		<property name="password" value="1234"></property>
 	</bean>
 
 	<!-- Tạo đối tượng bean sessionFactory cấu hình Hibernate -->

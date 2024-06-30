@@ -433,18 +433,20 @@
 						<div class="col-lg-3 col-md-6">
 							<div class="single-product">
 								<a href="${contextPath }/product-detail/${p.slug}"><img
+									style = "width:300px; height: 100px"
 									class="img-fluid" src="${contextPath }/images/${p.image}"
-									alt=""></a>
+									alt="" ></a>
 								<div class="product-details">
 									<h6>${p.proName }</h6>
-									<div class="price">
-										<h6>
-											<fmt:formatNumber value="${p.price }" type="currency"></fmt:formatNumber>
-										</h6>
-										<h6 class="l-through">
-											<fmt:formatNumber value="${p.oldPrice }" type="currency"></fmt:formatNumber>
-										</h6>
-									</div>
+		<div class="price">
+    <h6>
+        <fmt:formatNumber value="${p.price}" type="currency" currencyCode="USD"></fmt:formatNumber>
+    </h6>
+    <h6 class="l-through">
+        <fmt:formatNumber value="${p.oldPrice}" type="currency" currencyCode="USD"></fmt:formatNumber>
+    </h6>
+</div>
+
 									<div class="prd-bottom w-100%">
 
 										<a href="javascript:void(0)" onclick="addBasket('${p.proId}')" class="social-info"> <span class="ti-bag"></span>
